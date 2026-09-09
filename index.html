@@ -836,7 +836,7 @@
               <!-- Screenshot Placeholder -->
               <div class="img-placeholder lg:rounded-r-none">
                 <!-- Replace the placeholder below with: <img src="assets/images/ecommerce.png" alt="E-Commerce Platform" /> -->
-                <img src="E-commerce.png" alt="E-Commerce Platform" />
+                <img src="Dukaan-diagram.png" alt="E-Commerce Platform" />
               </div>
 
               <!-- Details -->
@@ -848,44 +848,41 @@
                 </div>
 
                 <p class="text-brand-600 dark:text-brand-400 font-medium text-sm mb-4">
-                  Modular clothing e-commerce backend with end-to-end order management and reporting
+                  Dukaan E-Commerce API Platform Production-ready e-commerce backend engineered for concurrency control, transactional integrity, and idempotency
                 </p>
 
                 <div class="space-y-3 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
                   <p>
-                    <strong class="text-zinc-900 dark:text-zinc-200">Problem:</strong> Clothing retailers need a
-                    flexible backend that handles product catalogs, cart management, order flows, and customer feedback
-                    under a single, well-structured API.
+                    <strong class="text-zinc-900 dark:text-zinc-200">Problem:</strong> High-traffic e-commerce systems face race conditions during concurrent checkouts, stock overselling,
+                    duplicate webhook charges, and session vulnerabilities.
                   </p>
                   <p>
-                    <strong class="text-zinc-900 dark:text-zinc-200">Solution:</strong> Architected a modular REST API
-                    with dedicated modules for products, categories, cart operations, order lifecycle management, user
-                    authentication, customer testimonials, FAQ management, and admin reporting — all following clean
-                    separation of concerns.
+                    <strong class="text-zinc-900 dark:text-zinc-200">Solution:</strong> Architected a modular NestJS REST API with deadlock-free row locking (SELECT FOR UPDATE),
+                    two-layer Redis idempotency for orders and Paymob webhooks, 
+                    token rotation with breach detection, and decoupled provider abstractions.
                   </p>
                 </div>
 
                 <!-- Key Metrics -->
                 <div class="flex flex-wrap gap-x-6 gap-y-2 text-xs text-zinc-500 dark:text-zinc-500 mb-6">
-                  <span class="flex items-center gap-1.5"><i class="ph ph-cube text-sm"></i> 8 core modules</span>
-                  <span class="flex items-center gap-1.5"><i class="ph ph-shopping-cart text-sm"></i> Full order
-                    flow</span>
-                  <span class="flex items-center gap-1.5"><i class="ph ph-chart-bar text-sm"></i> Admin reports</span>
+                  <span class="flex items-center gap-1.5"><i class="ph ph-cube text-sm"></i> Concurrency-Safe Checkout</span>
+                  <span class="flex items-center gap-1.5"><i class="ph ph-shopping-cart text-sm"></i> Two-Layer Idempotency</span>
+                  <span class="flex items-center gap-1.5"><i class="ph ph-chart-bar text-sm"></i> Token Breach Detection</span>
                 </div>
 
                 <!-- Tech Tags -->
                 <div class="flex flex-wrap gap-2 mb-6">
-                  <span class="tech-tag">Node.js</span>
-                  <span class="tech-tag">Express</span>
-                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">NestJS</span>
+                  <span class="tech-tag">TypeScript</span>
                   <span class="tech-tag">PostgreSQL</span>
-                  <span class="tech-tag">JWT</span>
-                  <span class="tech-tag">REST API</span>
+                  <span class="tech-tag">Prisma ORM</span>
+                  <span class="tech-tag">Redis</span>
+                  <span class="tech-tag">Docker</span>
                 </div>
 
                 <!-- Links -->
                 <div class="flex items-center gap-4">
-                  <a href="https://github.com/mohamedhazem4959/Ecommerce_BackEnd_Application-" target="_blank"
+                  <a href="https://github.com/mohamedhazem4959/Dukaan-Production-Ready-E-commerce-API" target="_blank"
                     rel="noopener noreferrer"
                     class="inline-flex items-center gap-2 text-sm font-medium text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 transition-colors">
                     <i class="ph ph-github-logo text-lg"></i>
